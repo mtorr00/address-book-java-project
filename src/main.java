@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
-		List<Address> addressBook = new ArrayList<>();
 		
+		List<Address> addressBook = new ArrayList<>();
 		Scanner input = new Scanner(System.in);
 		while (true) {
 			mainScreen();
@@ -79,7 +79,7 @@ public class main {
 								}
 								flag = false;
 								break;
-							case 3: System.out.println("Enter Last Name for Search: ");
+							case 3: System.out.println("Enter Phone Number for Search: ");
 									input.nextLine();
 									ArrayList<Address> matchesPn = new ArrayList<Address>();
 									String phoneNumSearch = input.nextLine();
@@ -96,7 +96,7 @@ public class main {
 									}
 									flag = false;
 									break;
-							case 4: System.out.println("Enter Last Name for Search: ");
+							case 4: System.out.println("Enter Email for Search: ");
 									input.nextLine();
 									ArrayList<Address> matchesEm = new ArrayList<Address>();
 									String emailQSearch = input.nextLine();
